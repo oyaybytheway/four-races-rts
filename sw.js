@@ -1,5 +1,5 @@
 /* network-first for HTML; versioned cache for static assets */
-const CACHE='legends-v2-20261109c';
+const CACHE='legends-v2-20261109d';
 const ASSETS=['./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));
